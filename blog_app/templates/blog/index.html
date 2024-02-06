@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        {% block title %}
+        <title>DiraCare</title>
+        {% endblock %}
+        <!-- Vendor CSS Files -->
+        <link href="../../static/assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="../../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+        <!-- Main CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+
+    <body>
+        <div id="header">
+            
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="{% url 'home' %}">DiraCare</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse right-55" id="navbarTogglerDemo02">
+                            {% block navbar %}
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 right-55">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#why-us">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacts">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign-In</a>
+                                </li>
+                            </ul>
+                            {% endblock %}
+                        </div>
+                    </div>
+                </nav>
+
+        </div>
+
+        {% block hero %}
+        <div id="hero" data-aos="fade-up" data-aos-delay="100">
+            <img src="../../static/images/squatting-pregnant-woman.jpg"  width="100%" height="500vh" alt="Pregnant mum"/>
+            <div class="img-text">
+            <h1>Healthy mom <br>
+                healthy baby</h1></div>
+        </div>
+        {% endblock %}
+
+        {% block main %}
+        <div id="main">
+            
+            <div id="blogs" class="blogs" data-aos="fade-up" >
+                <div class="header section-headings">
+                    Blogs
+                </div>
+                <div class="container text-center">
+                    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 ">
+                        
+                        <div class="blog-box col">
+                            <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image"/>
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                It's sometimes called pregnancy care or maternity care.
+                                You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and birth (an
+                                obstetrician).
+                                You should start your antenatal care as soon as possible once you know you're pregnant. You can do this by contacting a
+                                midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="blog-box col">
+                            <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                It's sometimes called pregnancy care or maternity care.
+                                You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and birth (an
+                                obstetrician).
+                                You should start your antenatal care as soon as possible once you know you're pregnant. You can do this by contacting a
+                                midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="blog-box col">
+                            <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                It's sometimes called pregnancy care or maternity care.
+                                You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and birth (an
+                                obstetrician).
+                                You should start your antenatal care as soon as possible once you know you're pregnant. You can do this by contacting a
+                                midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="blog-box col">
+                            <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                It's sometimes called pregnancy care or maternity care.
+                                You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and birth (an
+                                obstetrician).
+                                You should start your antenatal care as soon as possible once you know you're pregnant. You can do this by contacting a
+                                midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <a class="more-blogs" href="{% url 'blogs' %}">See more</a>
+            </div>
+
+            <div id="audio-classes" class="audio-classes" data-aos="fade-right">
+                <div class="header section-headings">Audio Classes</div>
+        
+                <div class="containers">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                        
+                            <div class="carousel-item active">
+                                <div class="containers">
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                            <img src="../../static/images/baby.jpg" alt="audio image" />
+                                            
+                                            <div class="text-body">
+                                                <div class="title title-headings">1 month</div>
+                                                <div class="duration">90 minutes long</div>
+                                                
+                                            </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/baby-game-mane-without-laughter-8779.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../../static/images/baby.jpg" alt="audio image" />
+                                    
+                                                <div class="text-body">
+                                                    <div class="title title-headings">2 month</div>
+                                                    <div class="duration">90 minutes long</div>
+                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/baby-sleep-162862.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="containers">
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../../static/images/baby.jpg" alt="audio image" />
+                                    
+                                                <div class="text-body">
+                                                    <div class="title title-headings">3 month</div>
+                                                    <div class="duration">90 minutes long</div>
+                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/pray-for-ukraine-sleep-21715.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../../static/images/baby.jpg" alt="audio image" />
+                                    
+                                                <div class="text-body">
+                                                    <div class="title title-headings">4 month</div>
+                                                    <div class="duration">90 minutes long</div>
+                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/baby-game-mane-without-laughter-8779.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="containers">
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../../static/images/baby.jpg" alt="audio image" />
+                                    
+                                                <div class="text-body">
+                                                    <div class="title title-headings">5 month</div>
+                                                    <div class="duration">90 minutes long</div>
+                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/baby-sleep-162862.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                    <div class="audio  w-100">
+                                        <a href="#">
+                                            <div>
+                                                <img src="../../static/images/baby.jpg" alt="audio image" />
+                                    
+                                                <div class="text-body">
+                                                    <div class="title title-headings">6 month</div>
+                                                    <div class="duration">90 minutes long</div>
+                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="audio-player">
+                                            <audio controls style="width: 100%;margin: 10px 5px;">
+                                                <source src="../../static/audios/pray-for-ukraine-sleep-21715.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                
+                    
+                    
+                </div>
+            </div>
+
+            <div id="why-us" class="why-us" data-aos="fade-up" data-aos-delay="200">    
+                <div class="content">
+                    <div class="header section-headings"><p>Why Us</p></div>
+                    <div class="container">
+                        <img src="../../static/images/29-298812_black-woman-png-womwn.jpg" 
+                        height="100%" width="50%" alt="woman"/>
+                        
+                        Brian Smith, Manager
+                        
+                        Dedicated to creating commercial and genuine partnerships to help businesses grow.
+                        
+                        With 10 years of experience, Brian specializes in earning the trust of others. As a sales manager, he’s mainly worked
+                        for small- to medium-sized companies in the technology sector. Throughout his career, he has maintained a strong record
+                        in recruitment, training and motivating staff to achieve sales and business objectives. At Tanzen Computers, he was
+                        responsible for developing and maintaining over 100 end-user accounts throughout 15 territories, resulting in $10
+                        million in additional annual sales. His main focus is to offer superior solutions for competitors’ clients.
+                        
+                        With 10 years of experience, Brian specializes in earning the trust of others. As a sales manager, he’s mainly worked
+                        for small- to medium-sized companies in the technology sector. Throughout his career, he has maintained a strong record
+                        in recruitment, training and motivating staff to achieve sales and business objectives. At Tanzen Computers, he was
+                        responsible for developing and maintaining over 100 end-user accounts throughout 15 territories, resulting in $10
+                        million in additional annual sales. His main focus is to offer superior solutions for competitors’ clients.
+                        At Tanzen Computers, he was
+                        responsible for developing and maintaining over 100 end-user accounts throughout 15 territories, resulting in $10
+                        million in additional annual sales. His main focus is to offer superior solutions for competitors’ clients.
+    
+                    </div>
+                </div>
+            </div> 
+        </div>
+        {% endblock %}
+
+        {% block footer %}
+        <div id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="links">
+                <div class="useful-links">
+                    <p class="header title-headings">Useful Links</p>
+                    {% block footer-links %}
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Why Us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#blogs">blogs</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#audio-classes">audio classes</a></li>
+                    </ul>
+                    {% endblock %}
+                </div>
+                <div id="contacts" class="contacts">
+                    <p class="header title-headings">Contacts <br>
+                    <span style="font-weight: lighter;">09043935599432</span></p>
+                </div>
+                <div class="social-corner">
+                    <p class="header title-headings">Social corner</p>
+                    <ul>
+                        <li><i class="bx bxl-twitter"></i><a href="#">twitter</a></li>
+                        <li><i class="bx bxl-facebook"></i><a href="#">facebook</a></li>
+                        <li><i class="bx bxl-instagram"></i><a href="#">instagram</a></li>
+                        <li><i class="bx bxl-linkedin"></i><a href="#">linkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                @copyright
+            </div>
+        </div>
+        {% endblock %}
+    <!-- Vendor JS Files -->
+    <script src="../../static/assets/vendor/aos/aos.js"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="../../static/js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+{% extends 'blog/index.html' %}
+
+<head>
+    {% block title %}
+    <title>DiraCare-blogs</title>
+    {% endblock %}
+</head>
+
+<body>
+    <div id="header">
+        {% block navbar %}
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 right-55">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sign-In</a>
+            </li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    {% block hero %}
+    {% endblock %}
+
+    
+    {% block main %}
+    <div id="main">
+        <div class="blog-container">
+            <div class="blog-list">
+                <div class="header section-headings">Blogs
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <a href="{% url 'blog-single' %}">
+                        <img src="../../static/images/baby.jpg" alt="blog image" />
+                        <div class="body">
+                            <div class="title title-headings">Pregnancy 1 month</div>
+                            <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                It's sometimes called pregnancy care or maternity care.
+                                You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and
+                                birth (an
+                                obstetrician).
+                                You should start your antenatal care as soon as possible once you know you're pregnant. You can do this
+                                by contacting a
+                                midwife or GP, or referring yourself directly to maternity services near you.</div>      
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="blog">
+                        <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                    It's sometimes called pregnancy care or maternity care.
+                                    You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and
+                                    birth (an
+                                    obstetrician).
+                                    You should start your antenatal care as soon as possible once you know you're pregnant. You can do this
+                                    by contacting a
+                                    midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog">
+                        <a href="{% url 'blog-single' %}">
+                            <img src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                    It's sometimes called pregnancy care or maternity care.
+                                    You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and
+                                    birth (an
+                                    obstetrician).
+                                    You should start your antenatal care as soon as possible once you know you're pregnant. You can do this
+                                    by contacting a
+                                    midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog">
+                        <a href="{% url 'blog-single' %}">
+                            <img class="blog-img" src="../../static/images/baby.jpg" alt="blog image" />
+                            <div class="body">
+                                <div class="title title-headings">Pregnancy 1 month</div>
+                                <div class="content">Antenatal care is the care you get from health professionals during your pregnancy
+                                    It's sometimes called pregnancy care or maternity care.
+                                    You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and
+                                    birth (an
+                                    obstetrician).
+                                    You should start your antenatal care as soon as possible once you know you're pregnant. You can do this
+                                    by contacting a
+                                    midwife or GP, or referring yourself directly to maternity services near you.</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="header section-headings">Categories
+                </div>
+                <div class="category">1st trimester</div>
+                <div class="category">water</div>
+                <div class="category">3rd trimester</div>
+                <div class="category">baby food</div>
+                <div class="category">sleep</div>
+                <div class="category">delivery</div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+       
+
+
+    {% block footer-links %}
+    <ul>
+        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Home Page</a></li>
+
+    </ul>
+    {% endblock %}
+    
+</body>
